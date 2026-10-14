@@ -1,6 +1,7 @@
 # Lab 2 submission package
 
 - `Lab2.ipynb`: self-contained notebook with executed outputs, formulas, all six runs, checks, and plot.
+- [report.md](report.md): report in Markdown, including formulas, results, the loss plot, and conclusions.
 - `Lab2_report.pdf`: compact report with the architecture, gradient derivation, numerical checks, results, and timing analysis.
 - `lab2.py`: equivalent standalone NumPy implementation.
 - `results/`: required loss plot, 300 epoch logs, final metrics, 20 gradient checks, timings, and raw results.
