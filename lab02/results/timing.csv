@@ -1,0 +1,3 @@
+batch_size,runs,forward_ms,backward_ms,backward_forward_ratio,width
+32,100,0.0286,0.0287,1.0034965034965035,16
+32,100,0.04325,0.05405,1.2497109826589596,64

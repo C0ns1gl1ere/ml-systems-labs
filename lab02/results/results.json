@@ -1,0 +1,355 @@
+{
+  "train_size": 1257,
+  "test_size": 540,
+  "train_class_counts": [
+    124,
+    127,
+    124,
+    128,
+    127,
+    127,
+    127,
+    125,
+    122,
+    126
+  ],
+  "test_class_counts": [
+    54,
+    55,
+    53,
+    55,
+    54,
+    55,
+    54,
+    54,
+    52,
+    54
+  ],
+  "sanity": [
+    {
+      "width": 16,
+      "initial_loss": 2.302585521568152,
+      "max_probability_sum_error": 2.220446049250313e-16
+    },
+    {
+      "width": 64,
+      "initial_loss": 2.302592494020702,
+      "max_probability_sum_error": 4.440892098500626e-16
+    }
+  ],
+  "summary": [
+    {
+      "width": 16,
+      "learning_rate": 0.001,
+      "final_train_loss": 2.3025495304308414,
+      "final_train_accuracy": 0.10103420843277645,
+      "test_accuracy": 0.10185185185185185,
+      "test_correct": 55,
+      "test_count": 540
+    },
+    {
+      "width": 16,
+      "learning_rate": 0.01,
+      "final_train_loss": 2.302478676717496,
+      "final_train_accuracy": 0.10103420843277645,
+      "test_accuracy": 0.10185185185185185,
+      "test_correct": 55,
+      "test_count": 540
+    },
+    {
+      "width": 16,
+      "learning_rate": 0.1,
+      "final_train_loss": 2.4073427045555125,
+      "final_train_accuracy": 0.24900556881463803,
+      "test_accuracy": 0.2388888888888889,
+      "test_correct": 129,
+      "test_count": 540
+    },
+    {
+      "width": 64,
+      "learning_rate": 0.001,
+      "final_train_loss": 2.3025256724939878,
+      "final_train_accuracy": 0.10103420843277645,
+      "test_accuracy": 0.10185185185185185,
+      "test_correct": 55,
+      "test_count": 540
+    },
+    {
+      "width": 64,
+      "learning_rate": 0.01,
+      "final_train_loss": 2.3023444262518664,
+      "final_train_accuracy": 0.10103420843277645,
+      "test_accuracy": 0.10185185185185185,
+      "test_correct": 55,
+      "test_count": 540
+    },
+    {
+      "width": 64,
+      "learning_rate": 0.1,
+      "final_train_loss": 0.18831367351094627,
+      "final_train_accuracy": 0.9315831344470963,
+      "test_accuracy": 0.9074074074074074,
+      "test_correct": 490,
+      "test_count": 540
+    }
+  ],
+  "gradient_checks": [
+    {
+      "parameter": "W1",
+      "row": 2,
+      "column": 5,
+      "analytic": -0.02636298690432351,
+      "numerical": -0.02636298690461558,
+      "relative_error": 5.539365736793546e-12,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 31,
+      "column": 15,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 16,
+      "column": 0,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 57,
+      "column": 5,
+      "analytic": -0.002388768973513238,
+      "numerical": -0.0023887689604151774,
+      "relative_error": 2.741592129219258e-09,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W2",
+      "row": 12,
+      "column": 3,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 32,
+      "column": 12,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 7,
+      "column": 2,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 41,
+      "column": 14,
+      "analytic": 0.036460116722504224,
+      "numerical": 0.03646011672575611,
+      "relative_error": 4.459509684370172e-11,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 33,
+      "column": 4,
+      "analytic": -0.03941184693482923,
+      "numerical": -0.039411846919357174,
+      "relative_error": 1.962868451966951e-10,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 57,
+      "column": 13,
+      "analytic": 0.005266448240721881,
+      "numerical": 0.0052664482108610855,
+      "relative_error": 2.8350032108770016e-09,
+      "passed": true,
+      "relu_kink": false,
+      "width": 16
+    },
+    {
+      "parameter": "W1",
+      "row": 3,
+      "column": 41,
+      "analytic": 0.011021995100496068,
+      "numerical": 0.01102199509231405,
+      "relative_error": 3.7116771926992475e-10,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W1",
+      "row": 48,
+      "column": 62,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W1",
+      "row": 24,
+      "column": 42,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W2",
+      "row": 24,
+      "column": 15,
+      "analytic": 9.898889404541783e-05,
+      "numerical": 9.898889277715205e-05,
+      "relative_error": 6.406101410430993e-09,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W2",
+      "row": 53,
+      "column": 27,
+      "analytic": 0.0014540596912934046,
+      "numerical": 0.0014540596879331067,
+      "relative_error": 1.1554883056067927e-09,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W1",
+      "row": 50,
+      "column": 26,
+      "analytic": -6.326019812111019e-05,
+      "numerical": -6.326020401958843e-05,
+      "relative_error": 4.662076739595787e-08,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W1",
+      "row": 11,
+      "column": 0,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W2",
+      "row": 0,
+      "column": 29,
+      "analytic": 0.0,
+      "numerical": 0.0,
+      "relative_error": 0.0,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W1",
+      "row": 51,
+      "column": 7,
+      "analytic": -0.013658456511943315,
+      "numerical": -0.013658456506776549,
+      "relative_error": 1.8914166168046524e-10,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    },
+    {
+      "parameter": "W2",
+      "row": 24,
+      "column": 50,
+      "analytic": 4.003150239715803e-05,
+      "numerical": 4.003150241849163e-05,
+      "relative_error": 2.664600894678746e-10,
+      "passed": true,
+      "relu_kink": false,
+      "width": 64
+    }
+  ],
+  "timings": [
+    {
+      "batch_size": 32,
+      "runs": 100,
+      "forward_ms": 0.0286,
+      "backward_ms": 0.0287,
+      "backward_forward_ratio": 1.0034965034965035,
+      "width": 16
+    },
+    {
+      "batch_size": 32,
+      "runs": 100,
+      "forward_ms": 0.04325,
+      "backward_ms": 0.05405,
+      "backward_forward_ratio": 1.2497109826589596,
+      "width": 64
+    }
+  ],
+  "configuration": {
+    "epochs": 50,
+    "batch_size": 32,
+    "split_seed": 42,
+    "initialization_seed": 42,
+    "shuffle_seed": 123,
+    "gradient_seed": 2026,
+    "epsilon": 1e-05,
+    "dtype": "float64",
+    "blas_threads": 1
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel"
+  }
+}
