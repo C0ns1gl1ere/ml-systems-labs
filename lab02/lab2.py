@@ -200,8 +200,6 @@ def run_experiments(output_dir='results'):
     write_csv(out/'gradient_check.csv', checks)
     write_csv(out/'summary.csv', summaries)
     write_csv(out/'timing.csv', timings)
-    for width in [16, 64]:
-        np.savez(out/f'model_W{width}_lr0.1.npz', **models[(width, .1)])
     result = dict(train_size=len(X_train), test_size=len(X_test),
         train_class_counts=np.bincount(y_train).tolist(),
         test_class_counts=np.bincount(y_test).tolist(), sanity=sanity,

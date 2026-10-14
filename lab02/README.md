@@ -3,7 +3,7 @@
 - `Lab2.ipynb`: self-contained notebook with executed outputs, formulas, all six runs, checks, and plot.
 - `Lab2_report.pdf`: compact report with the architecture, gradient derivation, numerical checks, results, and timing analysis.
 - `lab2.py`: equivalent standalone NumPy implementation.
-- `results/`: required loss plot, 300 epoch logs, final metrics, 20 gradient checks, timings, raw results, and two trained snapshots.
+- `results/`: required loss plot, 300 epoch logs, final metrics, 20 gradient checks, timings, and raw results.
 
 ## Reproduce
 Use Python 3.12. From this folder, run:
