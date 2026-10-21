@@ -1,0 +1,32 @@
+[
+  {
+    "model": "MLP",
+    "parameters": 235146,
+    "analytical_flops": 469504,
+    "thop_raw_macs": 234752.0,
+    "thop_attention_hook_macs": 234752.0,
+    "test_accuracy": 0.8797,
+    "latency_b1_ms": 0.10185000002138622,
+    "latency_b128_ms": 0.6107999999471758
+  },
+  {
+    "model": "CNN",
+    "parameters": 20490,
+    "analytical_flops": 2063488,
+    "thop_raw_macs": 1031744.0,
+    "thop_attention_hook_macs": 1031744.0,
+    "test_accuracy": 0.8964,
+    "latency_b1_ms": 0.14384999997218983,
+    "latency_b128_ms": 12.131499999952666
+  },
+  {
+    "model": "Attention",
+    "parameters": 70794,
+    "analytical_flops": 2329856,
+    "thop_raw_macs": 591488.0,
+    "thop_attention_hook_macs": 1181312.0,
+    "test_accuracy": 0.8402,
+    "latency_b1_ms": 0.3091500000209635,
+    "latency_b128_ms": 4.600900000014008
+  }
+]

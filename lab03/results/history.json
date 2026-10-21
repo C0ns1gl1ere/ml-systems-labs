@@ -1,0 +1,92 @@
+[
+  {
+    "model": "MLP",
+    "epoch": 1,
+    "train_loss": 0.4919304206024517,
+    "validation_accuracy": 0.8428
+  },
+  {
+    "model": "MLP",
+    "epoch": 2,
+    "train_loss": 0.3539321361715143,
+    "validation_accuracy": 0.862
+  },
+  {
+    "model": "MLP",
+    "epoch": 3,
+    "train_loss": 0.3143501803398132,
+    "validation_accuracy": 0.8682
+  },
+  {
+    "model": "MLP",
+    "epoch": 4,
+    "train_loss": 0.2901693123145537,
+    "validation_accuracy": 0.8794
+  },
+  {
+    "model": "MLP",
+    "epoch": 5,
+    "train_loss": 0.26944356562224303,
+    "validation_accuracy": 0.8848
+  },
+  {
+    "model": "CNN",
+    "epoch": 1,
+    "train_loss": 0.5122085422385823,
+    "validation_accuracy": 0.8662
+  },
+  {
+    "model": "CNN",
+    "epoch": 2,
+    "train_loss": 0.33563494445627384,
+    "validation_accuracy": 0.8834
+  },
+  {
+    "model": "CNN",
+    "epoch": 3,
+    "train_loss": 0.29587896302179856,
+    "validation_accuracy": 0.887
+  },
+  {
+    "model": "CNN",
+    "epoch": 4,
+    "train_loss": 0.27214827529300345,
+    "validation_accuracy": 0.895
+  },
+  {
+    "model": "CNN",
+    "epoch": 5,
+    "train_loss": 0.25422048396197233,
+    "validation_accuracy": 0.8976
+  },
+  {
+    "model": "Attention",
+    "epoch": 1,
+    "train_loss": 0.8403674366777594,
+    "validation_accuracy": 0.793
+  },
+  {
+    "model": "Attention",
+    "epoch": 2,
+    "train_loss": 0.5412514243906195,
+    "validation_accuracy": 0.8248
+  },
+  {
+    "model": "Attention",
+    "epoch": 3,
+    "train_loss": 0.4827764109958302,
+    "validation_accuracy": 0.8322
+  },
+  {
+    "model": "Attention",
+    "epoch": 4,
+    "train_loss": 0.45199503896453164,
+    "validation_accuracy": 0.83
+  },
+  {
+    "model": "Attention",
+    "epoch": 5,
+    "train_loss": 0.4255645395972512,
+    "validation_accuracy": 0.8468
+  }
+]
