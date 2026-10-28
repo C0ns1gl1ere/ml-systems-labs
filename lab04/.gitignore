@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+!data/
+!data/raw/
+!data/raw/**
+data/openml_cache/

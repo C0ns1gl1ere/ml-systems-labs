@@ -1,0 +1,4 @@
+Ingestion: 48842 rows, 15 columns; raw SHA256 b599a0a3cd1051f5a0e71d9334408e4190e820ba7911327452edbea3a2fee0b5
+baseline: accuracy=0.853955 F1=0.660102
+engineered: accuracy=0.857777 F1=0.669626
+Done. Report: C:\Users\Den\Documents\Codex\2026-10-28\hf\outputs\lab4_adult\REPORT.md

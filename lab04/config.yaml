@@ -1,0 +1,14 @@
+dataset:
+  name: adult
+  version: 2
+  expected_rows: 48842
+  expected_columns: 15
+random_state: 42
+test_size: 0.30
+clip_quantiles: [0.01, 0.99]
+audit_sample_size: 50
+model:
+  C: 1.0
+  solver: lbfgs
+  max_iter: 3000
+  tol: 0.0001

@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "accuracy": 0.8539548215382515,
+    "f1": 0.6601016518424396,
+    "confusion_matrix": [
+      [
+        10435,
+        712
+      ],
+      [
+        1428,
+        2078
+      ]
+    ],
+    "encoded_features": 105,
+    "iterations": 61
+  },
+  "engineered": {
+    "accuracy": 0.8577765645260357,
+    "f1": 0.6696258719086874,
+    "confusion_matrix": [
+      [
+        10457,
+        690
+      ],
+      [
+        1394,
+        2112
+      ]
+    ],
+    "encoded_features": 107,
+    "iterations": 75
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "raw/processed SHA256",
+    "repeatable stratified split and exact training deduplication",
+    "fresh-process model reload and exact saved transforms",
+    "train-only medians/modes/quantiles/scaling/vocabulary",
+    "unseen test categories and extreme values do not change fitted state",
+    "encoded data hashes and saved metrics",
+    "validator rejects impossible range and unknown category"
+  ]
+}

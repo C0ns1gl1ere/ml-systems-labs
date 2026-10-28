@@ -1,0 +1,7 @@
+{
+  "conflicting_feature_groups": 5,
+  "rows_in_conflicting_groups": 10,
+  "sample_size": 50,
+  "automated_sample_flags": 0,
+  "manual_review_status": "Not certified by pipeline; inspect and fill audit_50_manual.csv. Source labels cannot be independently verified."
+}

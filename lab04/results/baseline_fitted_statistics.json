@@ -1,0 +1,55 @@
+{
+  "n_fit_rows": 34165,
+  "numeric_columns": [
+    "age",
+    "fnlwgt",
+    "education-num",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week"
+  ],
+  "medians": [
+    37.0,
+    178272.0,
+    10.0,
+    0.0,
+    0.0,
+    40.0
+  ],
+  "category_columns": [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country"
+  ],
+  "modes": [
+    "Private",
+    "HS-grad",
+    "Married-civ-spouse",
+    "Prof-specialty",
+    "Husband",
+    "White",
+    "Male",
+    "United-States"
+  ],
+  "clip_lower": [
+    17.0,
+    27035.2,
+    3.0,
+    0.0,
+    0.0,
+    8.0
+  ],
+  "clip_upper": [
+    74.0,
+    509629.0,
+    16.0,
+    15024.0,
+    1980.0,
+    80.0
+  ]
+}

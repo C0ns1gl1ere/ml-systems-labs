@@ -1,0 +1,265 @@
+{
+  "shape": [
+    48842,
+    15
+  ],
+  "violations": [],
+  "columns": {
+    "age": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_range": [
+        17,
+        90
+      ]
+    },
+    "workclass": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 2799,
+      "literal_question_marks": 0,
+      "missing_total": 2799,
+      "allowed_categories": [
+        "Private",
+        "Self-emp-not-inc",
+        "Self-emp-inc",
+        "Federal-gov",
+        "Local-gov",
+        "State-gov",
+        "Without-pay",
+        "Never-worked",
+        "?"
+      ]
+    },
+    "fnlwgt": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0
+    },
+    "education": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "Preschool",
+        "1st-4th",
+        "5th-6th",
+        "7th-8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "HS-grad",
+        "Some-college",
+        "Assoc-voc",
+        "Assoc-acdm",
+        "Bachelors",
+        "Masters",
+        "Prof-school",
+        "Doctorate",
+        "?"
+      ]
+    },
+    "education-num": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_range": [
+        1,
+        16
+      ]
+    },
+    "marital-status": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "Married-civ-spouse",
+        "Divorced",
+        "Never-married",
+        "Separated",
+        "Widowed",
+        "Married-spouse-absent",
+        "Married-AF-spouse",
+        "?"
+      ]
+    },
+    "occupation": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 2809,
+      "literal_question_marks": 0,
+      "missing_total": 2809,
+      "allowed_categories": [
+        "Tech-support",
+        "Craft-repair",
+        "Other-service",
+        "Sales",
+        "Exec-managerial",
+        "Prof-specialty",
+        "Handlers-cleaners",
+        "Machine-op-inspct",
+        "Adm-clerical",
+        "Farming-fishing",
+        "Transport-moving",
+        "Priv-house-serv",
+        "Protective-serv",
+        "Armed-Forces",
+        "?"
+      ]
+    },
+    "relationship": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "Wife",
+        "Own-child",
+        "Husband",
+        "Not-in-family",
+        "Other-relative",
+        "Unmarried",
+        "?"
+      ]
+    },
+    "race": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "White",
+        "Asian-Pac-Islander",
+        "Amer-Indian-Eskimo",
+        "Other",
+        "Black",
+        "?"
+      ]
+    },
+    "sex": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "Female",
+        "Male",
+        "?"
+      ]
+    },
+    "capital-gain": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_range": [
+        0,
+        99999
+      ]
+    },
+    "capital-loss": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_range": [
+        0,
+        4356
+      ]
+    },
+    "hours-per-week": {
+      "expected_type": "int",
+      "actual_dtype": "int64",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_range": [
+        1,
+        99
+      ]
+    },
+    "native-country": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 857,
+      "literal_question_marks": 0,
+      "missing_total": 857,
+      "allowed_categories": [
+        "United-States",
+        "Cambodia",
+        "England",
+        "Puerto-Rico",
+        "Canada",
+        "Germany",
+        "Outlying-US(Guam-USVI-etc)",
+        "India",
+        "Japan",
+        "Greece",
+        "South",
+        "China",
+        "Cuba",
+        "Iran",
+        "Honduras",
+        "Philippines",
+        "Italy",
+        "Poland",
+        "Jamaica",
+        "Vietnam",
+        "Mexico",
+        "Portugal",
+        "Ireland",
+        "France",
+        "Dominican-Republic",
+        "Laos",
+        "Ecuador",
+        "Taiwan",
+        "Haiti",
+        "Columbia",
+        "Hungary",
+        "Guatemala",
+        "Nicaragua",
+        "Scotland",
+        "Thailand",
+        "Yugoslavia",
+        "El-Salvador",
+        "Trinadad&Tobago",
+        "Peru",
+        "Hong",
+        "Holand-Netherlands",
+        "?"
+      ]
+    },
+    "income": {
+      "expected_type": "category",
+      "actual_dtype": "category",
+      "native_na": 0,
+      "literal_question_marks": 0,
+      "missing_total": 0,
+      "allowed_categories": [
+        "<=50K",
+        ">50K"
+      ]
+    }
+  },
+  "null_policy": "Literal '?' and existing NA are missing; '?' is an allowed feature token. Target cannot be missing.",
+  "type_policy": "Integer semantics: numeric storage with finite whole-number values; categorical/object storage for categories.",
+  "exact_duplicate_excess_rows": 52,
+  "valid": true
+}

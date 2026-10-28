@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "runs_compared": 2,
+  "checks": [
+    "All four canonical encoded-data hashes match across two runs",
+    "Processed CSV and raw CSV hashes match across two runs",
+    "Accuracy/F1/confusion matrices match exactly across two runs",
+    "Existing human-review worksheet was preserved byte-for-byte"
+  ]
+}

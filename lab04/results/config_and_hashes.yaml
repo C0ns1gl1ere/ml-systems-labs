@@ -1,0 +1,42 @@
+configuration:
+  dataset:
+    name: adult
+    version: 2
+    expected_rows: 48842
+    expected_columns: 15
+  random_state: 42
+  test_size: 0.3
+  clip_quantiles:
+  - 0.01
+  - 0.99
+  audit_sample_size: 50
+  model:
+    C: 1.0
+    solver: lbfgs
+    max_iter: 3000
+    tol: 0.0001
+raw_csv_sha256: b599a0a3cd1051f5a0e71d9334408e4190e820ba7911327452edbea3a2fee0b5
+hashes:
+  baseline_train_encoded_contents: 158adca891a6d41e45b91613be0c01d3a79e1b4f208d8e4fabbd5deaced296fc
+  baseline_test_encoded_contents: 6be68856b7096c70fe5f0fa7508e1213bedf3569ab44cff1c86357f46ae669d0
+  engineered_train_encoded_contents: 5106c04817b315723bdb13b0987008e5f3e19db963ab2f5d3626b09775bbccaa
+  engineered_test_encoded_contents: 0c74d04a07b2bfa2677ccd37b50ce7c9e3ab15ebaaa83d429452d6fcb5deb0f1
+  processed_dataset.csv: f666a689a2f89063cfad480a993ad40bacf0feb7900ad5d4a4bdf6671655034a
+environment:
+  python: 3.11.8
+  numpy: 2.2.6
+  pandas: 2.2.3
+  scipy: 1.15.3
+  scikit-learn: 1.7.2
+  joblib: 1.5.2
+  PyYAML: 6.0.3
+  matplotlib: 3.10.7
+train_rows_before_dedup: 34189
+train_rows: 34165
+test_rows: 14653
+train_duplicates_removed: 24
+test_rows_with_feature_match_in_train: 27
+positive_train_fraction: 0.23936777403775794
+positive_test_fraction: 0.23926840919948134
+automatic_checks: 'Raw unchanged, test unchanged, disjoint row IDs, train-only fit,
+  no train duplicates, convergence: PASS'
