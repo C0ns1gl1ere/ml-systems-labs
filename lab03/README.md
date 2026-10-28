@@ -3,7 +3,7 @@
 - [report.md](report.md): full report with hand calculations, profiling comparison, latency protocol, and conclusions.
 - [Lab3_report.pdf](Lab3_report.pdf): compact report with tables, formulas, and both trade-off plots.
 - [src/lab3.py](src/lab3.py): standalone PyTorch implementation of all three specified architectures.
-- [evidence/hand_calculations.jpg](evidence/hand_calculations.jpg): original handwritten MLP and CNN calculations, extracted from the supplied scan.
+- [evidence/hand_calculations.png](evidence/hand_calculations.png): supplied photo of handwritten MLP, CNN, and attention calculations.
 - `results/`: metrics, 15 epoch logs, plots, torchinfo summaries, environment versions, and final model weights.
 
 ## Reproduce
