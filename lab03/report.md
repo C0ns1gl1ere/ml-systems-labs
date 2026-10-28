@@ -24,9 +24,9 @@ Multiply and add count as two FLOPs; biases, activations, pooling, normalization
 
 ### Handwritten working
 
-![Handwritten MLP and CNN parameter and FLOP calculations](evidence/hand_calculations.jpg)
+![Handwritten MLP, CNN, and attention parameter and FLOP calculations](evidence/hand_calculations.png)
 
-The supplied scan records the MLP and CNN working. The typed derivations above also include attention and give the values used in the profiling comparison.
+The supplied photo records the MLP, CNN, and attention working. The typed derivations above give the values used in the profiling comparison.
 
 ## Profiling comparison
 | Model | Analytical matrix FLOPs | Raw THOP MACs | Hook-adjusted THOP x2 |
