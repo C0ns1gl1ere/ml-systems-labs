@@ -22,6 +22,12 @@ Multiply and add count as two FLOPs; biases, activations, pooling, normalization
 * CNN first convolution: 2*3*3*1*16*28*28 = 225,792 FLOPs. Parameters: 3*3*1*16+16 = 160. Second convolution: 2*3*3*16*32*14*14 = 1,806,336. Classifier: 2*1568*10 = 31,360. Total = 2,063,488.
 * Attention sequence length 16, width 64, four heads of width 16. QKV per encoder: 2*16*64*3*64 = 393,216; QK^T: 2*16^2*64 = 32,768; attention-times-V: 32,768; output projection: 2*16*64*64 = 131,072. Attention subtotal = 589,824. Feed-forward: 2*16*(64*128+128*64) = 524,288. Two encoders = 2,228,224. Patch projection = 2*16*49*64 = 100,352; head = 1,280. Whole model = 2,329,856 FLOPs.
 
+### Handwritten working
+
+![Handwritten MLP and CNN parameter and FLOP calculations](evidence/hand_calculations.jpg)
+
+The supplied scan records the MLP and CNN working. The typed derivations above also include attention and give the values used in the profiling comparison.
+
 ## Profiling comparison
 | Model | Analytical matrix FLOPs | Raw THOP MACs | Hook-adjusted THOP x2 |
 |---|---:|---:|---:|
@@ -41,5 +47,5 @@ Highest observed test accuracy: CNN. CNN also has the fewest parameters, making 
 Cost-effectiveness depends on the constraint: use the table and plots to compare accuracy, parameter memory, and measured latency together. A higher-FLOP model can still run faster because FLOPs omit memory traffic and execution overhead. Five epochs and one seed provide an initial comparison, not statistical proof of architectural superiority.
 
 ## Reproduce
-Install requirements.txt, then run `python lab3.py --data PATH_TO_DATA --threads 4`. Results, training history, plots, summaries, and final model weights are written in `results/`; report.md is written beside the script. The first run downloads Fashion-MNIST.
+From `lab03`, install requirements.txt, then run `python src/lab3.py --data PATH_TO_DATA --threads 4`. Results, training history, plots, summaries, and final model weights are written in `lab03/results/`; the report is written to `lab03/report.md`. These output paths are independent of the working directory. Without `--data`, the dataset cache defaults to `lab03/data/`. The first run downloads Fashion-MNIST.
 
