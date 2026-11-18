@@ -1,0 +1,33 @@
+seed: 42
+split_seed: 42
+device: auto
+threads: 4
+data_dir: data
+output_dir: runs
+experiment: Lab6 Fashion-MNIST
+train_size: 55000
+validation_size: 5000
+mean: 0.2860
+std: 0.3530
+batch_size: 128
+num_workers: 0
+epochs: 5
+accumulation: 1
+optimizer: adam
+learning_rate: 0.001
+momentum: 0.9
+scheduler: constant
+step_size: 3
+gamma: 0.5
+min_lr_ratio: 0.01
+plateau_patience: 1
+study:
+  workers: [0, 1, 2, 4, 8]
+  batches: [32, 64, 128, 256, 512]
+  batch_epochs: 5
+  comparison_epochs: 10
+  optimizer_lr:
+    sgd: 0.05
+    adam: 0.001
+  accuracy_jobs: 3
+  interrupt_after: 3

@@ -1,0 +1,17 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "logical_cores": 12,
+  "python": "3.11.8",
+  "device": "cpu",
+  "threads": 4,
+  "packages": {
+    "torch": "2.3.1",
+    "torchvision": "0.18.1",
+    "mlflow": "2.14.1",
+    "numpy": "1.26.4",
+    "matplotlib": "3.9.0",
+    "psutil": "5.9.8",
+    "PyYAML": "6.0.3"
+  }
+}
