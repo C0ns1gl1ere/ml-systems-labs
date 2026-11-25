@@ -5,7 +5,7 @@
 
 ## Problem and intended use
 
-Build an offline image classifier for a museum kiosk or classroom demo. A visitor selects a curated image showing one vehicle or scale model, and the kiosk displays its category immediately: tank, military truck, fixed-wing military aircraft, or military helicopter. A low-confidence prediction prompts the visitor to choose a clearer image.
+Build an offline image classifier for a phone-based museum guide or classroom demo. The user selects a curated photo of a vehicle or scale model, or opens a prerecorded clip from a simulator. The app displays the predicted category: tank, military truck, fixed-wing military aircraft, or military helicopter. For a clip, the label updates during playback on sampled frames. When confidence is low, the app displays “uncertain”.
 
 ## Dataset and training pipeline
 
@@ -15,4 +15,4 @@ Resize and normalize inputs consistently. Apply light augmentation only to train
 
 ## Success criteria and deployment
 
-Target at least **0.80 macro F1** on the held-out test set and a drop of at most **0.02 macro F1** from FP32 to INT8. Report per-class recall and a confusion matrix to show which categories are hardest to distinguish. The exported model must be **at most 5 MB**. A single-image request on an x86-64 CPU with one inference thread must take **at most 50 ms at p95**, including resizing, normalization, prediction, and label selection. Time the warmed-up pipeline with images already in memory and report model loading separately. The kiosk runs locally and shows one result per visitor selection.
+Target at least **0.80 macro F1** on the held-out test set and a drop of at most **0.02 macro F1** from FP32 to INT8. Report per-class recall and a confusion matrix to show which categories are hardest to distinguish. The exported model must be **at most 5 MB**. Target **at most 50 ms at p95** for processing one image on the phone CPU, including resizing, normalization, prediction, and label selection. Record the phone model and runtime, time the warmed-up pipeline with decoded images already in memory, and report model loading separately. For the optional video demo, also report how often the app can refresh the label during playback. All inference runs on the device.
